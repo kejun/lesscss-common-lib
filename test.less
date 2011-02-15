@@ -1,0 +1,80 @@
+@import 'lib';
+
+h2 { clear:both; }
+
+// test-1: rounded corner
+#mod-1 {
+	padding: 10px;
+	border: 2px solid @color-grey;
+  .rounded-corner(10px);
+}
+
+// test-2: arrow
+#mod-2 {
+  .arrow-e(20px, red);
+}
+
+#mod-3 {
+  .arrow-w(20px, @color-grey);
+}
+
+#mod-4 {
+  .arrow-n(10px, @color-grey-light);
+}
+
+#mod-5 {
+  .arrow-s(10px, #025ac4);
+}
+
+#mod-6 {
+  position: relative;
+	height: 100px;
+	.x1 {
+	  position: absolute;
+		left: 10px;
+		top: 0;
+		.arrow-s(50px, #c96818);
+		border-width: 50px;
+	}
+
+	.x2 {
+	  position: absolute;
+		left: 9px;
+		top: 0;
+		.arrow-s(52px, #fff);
+		border-width: 50px;
+		border-right-width: 20px;
+	}
+} 
+
+#mod-2,
+#mod-3,
+#mod-4,
+#mod-5 { margin:20px; }
+
+
+// test-3: equal height
+#mod-7 {
+  overflow:hidden;
+	width:100%;
+}
+#mod-7 .col {
+  float:left;
+	width: 30%;
+	margin-right: 10px;
+  background-color: @color-grey-light + #333;
+	.equal-height;
+}
+
+
+// test-4: transparent
+#mod-8 {
+  width: 185px;
+	height: 185px;
+	background: url(http://img.xiami.com/images/album/img58/23258/4222931296097841_4.jpg) no-repeat;
+	.opacity(0.2);
+	&:hover {
+	  .opacity(1);
+	}
+	.transition('opacity', 0.2s);
+}

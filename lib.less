@@ -1,0 +1,83 @@
+@color-grey: #666;
+@color-grey-light: #999;
+
+.inline-block() {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+
+.wrap() {
+  text-wrap: wrap;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  word-wrap: break-word;
+}
+
+.rounded-corner(@radius: 5px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+}
+
+.opacity(@value: 0.4) {
+	filter:e(%("alpha(opacity=%s)", @value * 100));
+  opacity:@value;
+	zoom: 1;
+}
+
+.transition(@property:all, @duration: 0.2, @func: ease) {
+	-moz-transition: @property @duration @func;
+	-webkit-transition: @property @duration @func;
+	-ms-transition: @property @duration @func;
+	transition: @property @duration @func;
+}
+
+// reference: http://hedgerwow.appspot.com/demo/arrows
+.css-arrow() {
+  .inline-block;
+  width: 0;
+	height: 0;
+	line-height:0;
+	vertical-align: middle;
+	border-style: dashed;
+	border-color: transparent;
+	border-width: 0.53em;
+}
+
+.arrow-n(@size: 10px, @color: #666) {
+  .css-arrow;
+	font-size: @size;
+  border-bottom-width: 1em;
+  border-bottom-style: solid;
+  border-bottom-color: @color;
+}
+
+.arrow-e(@size: 10px, @color: #666) {
+  .css-arrow;
+	font-size: @size;
+  border-left-width: 1em;
+  border-left-style: solid;
+  border-left-color: @color;
+}
+
+.arrow-s(@size: 10px, @color: #666) {
+  .css-arrow;
+	font-size: @size;
+  border-top-width: 1em;
+  border-top-style: solid;
+  border-top-color: @color;
+}
+
+.arrow-w(@size: 10px, @color: #666) {
+  .css-arrow;
+	font-size: @size;
+  border-right-width: 1em;
+  border-right-style: solid;
+  border-right-color: @color;
+}
+
+.equal-height(@size: 1000px) {
+  margin-bottom: -1 * @size;
+  padding-bottom: @size;
+}

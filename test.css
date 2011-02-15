@@ -1,0 +1,12 @@
+h2{clear:both;}
+#mod-1{padding:10px;border:2px solid #666666;-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px;}
+#mod-2{display:inline-block;*display:inline;zoom:1;width:0;height:0;line-height:0;vertical-align:middle;border-style:dashed;border-color:transparent;border-width:0.53em;font-size:20px;border-left-width:1em;border-left-style:solid;border-left-color:red;}
+#mod-3{display:inline-block;*display:inline;zoom:1;width:0;height:0;line-height:0;vertical-align:middle;border-style:dashed;border-color:transparent;border-width:0.53em;font-size:20px;border-right-width:1em;border-right-style:solid;border-right-color:#666666;}
+#mod-4{display:inline-block;*display:inline;zoom:1;width:0;height:0;line-height:0;vertical-align:middle;border-style:dashed;border-color:transparent;border-width:0.53em;font-size:10px;border-bottom-width:1em;border-bottom-style:solid;border-bottom-color:#999999;}
+#mod-5{display:inline-block;*display:inline;zoom:1;width:0;height:0;line-height:0;vertical-align:middle;border-style:dashed;border-color:transparent;border-width:0.53em;font-size:10px;border-top-width:1em;border-top-style:solid;border-top-color:#025ac4;}
+#mod-6{position:relative;height:100px;}#mod-6 .x1{position:absolute;left:10px;top:0;display:inline-block;*display:inline;zoom:1;width:0;height:0;line-height:0;vertical-align:middle;border-style:dashed;border-color:transparent;border-width:0.53em;font-size:50px;border-top-width:1em;border-top-style:solid;border-top-color:#c96818;border-width:50px;}
+#mod-6 .x2{position:absolute;left:9px;top:0;display:inline-block;*display:inline;zoom:1;width:0;height:0;line-height:0;vertical-align:middle;border-style:dashed;border-color:transparent;border-width:0.53em;font-size:52px;border-top-width:1em;border-top-style:solid;border-top-color:#ffffff;border-width:50px;border-right-width:20px;}
+#mod-2,#mod-3,#mod-4,#mod-5{margin:20px;}
+#mod-7{overflow:hidden;width:100%;}
+#mod-7 .col{float:left;width:30%;margin-right:10px;background-color:#cccccc;margin-bottom:-1000px;padding-bottom:1000px;}
+#mod-8{width:185px;height:185px;background:url(http://img.xiami.com/images/album/img58/23258/4222931296097841_4.jpg) no-repeat;filter:alpha(opacity=20);opacity:0.2;zoom:1;-moz-transition:'opacity' 0.2s ease;-webkit-transition:'opacity' 0.2s ease;-ms-transition:'opacity' 0.2s ease;transition:'opacity' 0.2s ease;}#mod-8:hover{filter:alpha(opacity=100);opacity:1;zoom:1;}
